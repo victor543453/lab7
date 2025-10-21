@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Feria UTP 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Feria Académica 2025</h1>
+            <p>Universidad Tecnológica de Panamá</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="registro.html" class="activo">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <h2>Registro para la Feria Académica</h2>
+        
+        <section class="formulario-registro">
+            <form id="registro-form">
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                
+                <div class="campo">
+                    <label for="interes">Área de interés:</label>
+                    <select id="interes" name="interes" required>
+                        <option value="">Seleccione un área</option>
+                        <option value="sistemas">Ingeniería de Sistemas</option>
+                        <option value="software">Desarrollo de Software</option>
+                        <option value="civil">Ingeniería Civil</option>
+                        <option value="administracion">Administración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="campo">
+                    <label for="charlas">Charlas de interés:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="charlas" value="sistemas"> Introducción a Ingeniería de Sistemas</label>
+                        <label><input type="checkbox" name="charlas" value="software"> Oportunidades en Desarrollo de Software</label>
+                        <label><input type="checkbox" name="charlas" value="civil"> Innovación en Ingeniería Civil</label>
+                        <label><input type="checkbox" name="charlas" value="administracion"> Administración en la Era Digital</label>
+                    </div>
+                </div>
+                
+                <div class="campo">
+                    <label for="comentarios">Comentarios o preguntas:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Registro</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Universidad Tecnológica de Panamá - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
